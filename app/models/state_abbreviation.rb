@@ -1,0 +1,2 @@
+class StateAbbreviation < ApplicationRecord
+end
