@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  # get "/state_abbreviation" => "state_abbreviation#index"
   get "/states" => "states#index"
+  get "/states/:id" => "states#show"
+
+  get "/state_abbreviations" => "state_abbreviations#index"
+  get "/state_abbreviations/:id" => "state_abbreviations#show"
 end
